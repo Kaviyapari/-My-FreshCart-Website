@@ -15,7 +15,7 @@ html {
 body {
     font-family: "Inter", sans-serif;
     color: #18231d;
-    background: #ffffff;
+    background: #fff;
     line-height: 1.6;
 }
 
@@ -40,8 +40,8 @@ input {
     align-items: center;
     gap: 35px;
     padding: 0 6%;
-    border-bottom: 1px solid #eeeeee;
-    background: #ffffff;
+    border-bottom: 1px solid #eee;
+    background: #fff;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -111,8 +111,8 @@ input {
 
 .search-box input {
     width: 100%;
-    border: none;
-    outline: none;
+    border: 0;
+    outline: 0;
     background: transparent;
     font-size: 14px;
 }
@@ -128,7 +128,7 @@ input {
     width: 42px;
     height: 42px;
     border: 1px solid #e5e8e5;
-    background: #ffffff;
+    background: #fff;
     border-radius: 50%;
     cursor: pointer;
     position: relative;
@@ -147,7 +147,7 @@ input {
     width: 20px;
     height: 20px;
     background: #2ea44f;
-    color: white;
+    color: #fff;
     border-radius: 50%;
     font-size: 11px;
     display: flex;
@@ -156,9 +156,9 @@ input {
 }
 
 .login-btn {
-    border: none;
+    border: 0;
     background: #193d2a;
-    color: white;
+    color: #fff;
     padding: 12px 19px;
     border-radius: 9px;
     cursor: pointer;
@@ -175,8 +175,8 @@ input {
 ========================= */
 
 .nav {
-    background: #ffffff;
-    border-bottom: 1px solid #eeeeee;
+    background: #fff;
+    border-bottom: 1px solid #eee;
 }
 
 .nav-container {
@@ -210,7 +210,7 @@ input {
     grid-template-columns: 1fr 0.9fr;
     align-items: center;
     gap: 60px;
-    background: linear-gradient(110deg, #f1faf3, #ffffff);
+    background: linear-gradient(110deg, #f1faf3, #fff);
 }
 
 .hero-content {
@@ -262,7 +262,7 @@ input {
 }
 
 .primary-btn {
-    color: white;
+    color: #fff;
     background: #2f9d4d;
 }
 
@@ -272,7 +272,7 @@ input {
 
 .secondary-btn {
     border: 1px solid #d5ddd7;
-    background: white;
+    background: #fff;
     color: #27362d;
 }
 
@@ -298,7 +298,7 @@ input {
     height: 460px;
     border-radius: 28px;
     overflow: hidden;
-    box-shadow: 0 25px 60px rgba(26, 68, 40, 0.16);
+    box-shadow: 0 25px 60px rgba(26, 68, 40, .16);
 }
 
 .hero-image img {
@@ -309,7 +309,7 @@ input {
 
 
 /* =========================
-   SECTION
+   SECTIONS
 ========================= */
 
 .categories-section,
@@ -327,7 +327,7 @@ input {
 }
 
 .section-heading > div > span,
-.newsletter span,
+.newsletter > span,
 .offer-content > span {
     color: #38a454;
     font-size: 12px;
@@ -363,7 +363,7 @@ input {
     padding: 12px;
     cursor: pointer;
     border-radius: 16px;
-    transition: 0.3s;
+    transition: transform .3s, background-color .3s;
 }
 
 .category-card:hover {
@@ -406,8 +406,8 @@ input {
     border-radius: 25px;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 1fr 0.8fr;
-    color: white;
+    grid-template-columns: 1fr .8fr;
+    color: #fff;
 }
 
 .offer-content {
@@ -430,7 +430,7 @@ input {
 
 .offer-btn {
     width: fit-content;
-    background: white;
+    background: #fff;
     color: #173b28;
     padding: 12px 20px;
     border-radius: 8px;
@@ -464,7 +464,7 @@ input {
 
 .filter-btn {
     border: 1px solid #e0e5e1;
-    background: white;
+    background: #fff;
     padding: 9px 16px;
     border-radius: 20px;
     cursor: pointer;
@@ -476,7 +476,7 @@ input {
 .filter-btn.active {
     background: #2f9d4d;
     border-color: #2f9d4d;
-    color: white;
+    color: #fff;
 }
 
 .products-grid {
@@ -489,13 +489,13 @@ input {
     border: 1px solid #e8ece9;
     border-radius: 16px;
     overflow: hidden;
-    background: white;
-    transition: 0.3s;
+    background: #fff;
+    transition: transform .3s, box-shadow .3s;
 }
 
 .product-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 15px 40px rgba(22, 60, 36, 0.1);
+    box-shadow: 0 15px 40px rgba(22, 60, 36, .1);
 }
 
 .product-image {
@@ -530,8 +530,8 @@ input {
     z-index: 2;
     width: 35px;
     height: 35px;
-    border: none;
-    background: white;
+    border: 0;
+    background: #fff;
     border-radius: 50%;
     cursor: pointer;
     font-size: 15px;
@@ -592,7 +592,7 @@ input {
 }
 
 .add-btn {
-    border: none;
+    border: 0;
     background: #eaf7ed;
     color: #258a40;
     padding: 9px 13px;
@@ -604,7 +604,7 @@ input {
 
 .add-btn:hover {
     background: #2f9d4d;
-    color: white;
+    color: #fff;
 }
 
 
@@ -681,16 +681,16 @@ input {
 .newsletter input {
     flex: 1;
     border: 1px solid #dce2dd;
-    border-right: none;
+    border-right: 0;
     padding: 13px 16px;
-    outline: none;
+    outline: 0;
     border-radius: 8px 0 0 8px;
 }
 
 .newsletter button {
-    border: none;
+    border: 0;
     background: #2f9d4d;
-    color: white;
+    color: #fff;
     padding: 0 20px;
     border-radius: 0 8px 8px 0;
     cursor: pointer;
@@ -704,7 +704,7 @@ input {
 
 footer {
     background: #14291d;
-    color: white;
+    color: #fff;
     padding: 60px 7% 0;
 }
 
@@ -716,7 +716,7 @@ footer {
 }
 
 .footer-logo {
-    color: white;
+    color: #fff;
     margin-bottom: 18px;
 }
 
@@ -764,7 +764,7 @@ footer {
 }
 
 .footer-column a:hover {
-    color: white;
+    color: #fff;
 }
 
 .footer-column p {
@@ -798,7 +798,7 @@ footer {
 .cart-overlay {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, .45);
     z-index: 2000;
     display: none;
 }
@@ -814,9 +814,9 @@ footer {
     width: 400px;
     max-width: 100%;
     height: 100vh;
-    background: white;
+    background: #fff;
     z-index: 2001;
-    transition: 0.35s;
+    transition: right .35s;
     display: flex;
     flex-direction: column;
 }
@@ -827,7 +827,7 @@ footer {
 
 .cart-header {
     padding: 22px;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #eee;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -842,7 +842,7 @@ footer {
 }
 
 .cart-header button {
-    border: none;
+    border: 0;
     background: transparent;
     font-size: 20px;
     cursor: pointer;
@@ -879,7 +879,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 13px 0;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #eee;
 }
 
 .cart-item h4 {
@@ -893,7 +893,7 @@ footer {
 }
 
 .remove-item {
-    border: none;
+    border: 0;
     background: #fff0f0;
     color: #e74c3c;
     width: 30px;
@@ -904,7 +904,7 @@ footer {
 
 .cart-footer {
     padding: 20px;
-    border-top: 1px solid #eeeeee;
+    border-top: 1px solid #eee;
 }
 
 .cart-total {
@@ -921,9 +921,9 @@ footer {
 .checkout-btn {
     width: 100%;
     padding: 14px;
-    border: none;
+    border: 0;
     background: #2f9d4d;
-    color: white;
+    color: #fff;
     border-radius: 8px;
     cursor: pointer;
     font-weight: 700;
@@ -935,7 +935,6 @@ footer {
 ========================= */
 
 @media (max-width: 1100px) {
-
     .header {
         gap: 18px;
         padding: 0 3%;
@@ -952,12 +951,9 @@ footer {
     .features {
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
-
 @media (max-width: 850px) {
-
     .header {
         height: auto;
         padding: 18px;
@@ -1009,12 +1005,9 @@ footer {
     .newsletter form {
         width: 100%;
     }
-
 }
 
-
 @media (max-width: 600px) {
-
     .logo {
         font-size: 21px;
     }
@@ -1097,5 +1090,4 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
-
 }
