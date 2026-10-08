@@ -5,22 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- SEO -->
     <title>FreshCart - Online Grocery Store | Fresh Groceries & Daily Essentials</title>
-    <meta name="description"
-          content="Shop fresh fruits, vegetables, dairy products, snacks and daily essentials at FreshCart.
-        Enjoy fresh groceries and great deals delivered to your door.">
-    <link rel="canonical"
-     href="https://kaviyapari.github.io/-My-FreshCart-Website/">
-    <meta property="og:title" content="FreshCart - Online Grocery Store">
-<meta property="og:description" content="Shop fresh groceries, fruits, vegetables, dairy products and daily essentials at FreshCart.">
-<meta property="og:url" content="https://kaviyapari.github.io/-My-FreshCart-Website/">
-<meta property="og:type" content="website">
-       <meta name="google-site-verification"
-    content="PGpqAHv_Wxpni6lsPkgPyFsfubeTZbrz-_VNB2z_6mY">
 
-    <!-- Google Font -->
+    <meta name="description"
+        content="Shop fresh fruits, vegetables, dairy products, snacks and daily essentials at FreshCart. Enjoy fresh groceries and great deals delivered to your door.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical"
+        href="https://kaviyapari.github.io/-My-FreshCart-Website/">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title"
+        content="FreshCart - Online Grocery Store">
+
+    <meta property="og:description"
+        content="Shop fresh groceries, fruits, vegetables, dairy products and daily essentials at FreshCart.">
+
+    <meta property="og:url"
+        content="https://kaviyapari.github.io/-My-FreshCart-Website/">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:site_name" content="FreshCart">
+
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification"
+        content="PGpqAHv_Wxpni6lsPkgPyFsfubeTZbrz-_VNB2z_6mY">
+
+    <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font -->
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
@@ -30,7 +48,7 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-    <!-- CSS -->
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -47,34 +65,68 @@
 
         <div class="location">
             <i class="fa-solid fa-location-dot"></i>
+
             <div>
                 <small>Deliver to</small>
                 <strong>Chennai, India</strong>
             </div>
         </div>
 
+        <!-- Search -->
         <div class="search-box">
+
             <i class="fa-solid fa-magnifying-glass"></i>
+
+            <label for="searchInput" class="sr-only">
+                Search products
+            </label>
+
             <input
-                type="text"
+                type="search"
                 id="searchInput"
-                placeholder="Search for groceries, fruits, vegetables...">
+                placeholder="Search for groceries, fruits, vegetables..."
+                aria-label="Search for groceries, fruits and vegetables">
+
         </div>
 
         <div class="header-actions">
 
-            <button class="icon-btn">
-                <i class="fa-regular fa-heart"></i>
+            <!-- Wishlist -->
+            <button
+                class="icon-btn"
+                type="button"
+                aria-label="Add product to wishlist">
+
+                <i class="fa-regular fa-heart"
+                    aria-hidden="true"></i>
+
             </button>
 
-            <button class="icon-btn cart-btn" onclick="openCart()">
-                <i class="fa-solid fa-cart-shopping"></i>
+            <!-- Cart -->
+            <button
+                class="icon-btn cart-btn"
+                type="button"
+                onclick="openCart()"
+                aria-label="Open shopping cart">
+
+                <i class="fa-solid fa-cart-shopping"
+                    aria-hidden="true"></i>
+
                 <span id="cartCount">0</span>
+
             </button>
 
-            <button class="login-btn">
-                <i class="fa-regular fa-user"></i>
+            <!-- Login -->
+            <button
+                class="login-btn"
+                type="button"
+                aria-label="Login to FreshCart">
+
+                <i class="fa-regular fa-user"
+                    aria-hidden="true"></i>
+
                 Login
+
             </button>
 
         </div>
@@ -84,15 +136,20 @@
 
     <!-- ================= NAVIGATION ================= -->
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Main navigation">
 
         <div class="nav-container">
 
             <a href="#home">Home</a>
+
             <a href="#categories">Categories</a>
+
             <a href="#products">Products</a>
+
             <a href="#deals">Deals</a>
+
             <a href="#about">About Us</a>
+
             <a href="#contact">Contact</a>
 
         </div>
@@ -100,557 +157,892 @@
     </nav>
 
 
-    <!-- ================= HERO ================= -->
+    <!-- ================= MAIN CONTENT ================= -->
 
-    <section class="hero" id="home">
+    <main>
 
-        <div class="hero-content">
+        <!-- ================= HERO ================= -->
 
-            <span class="hero-tag">
-                🥬 Fresh & Healthy Everyday
-            </span>
+        <section class="hero" id="home">
 
-            <h1>
-                Fresh Groceries
-                <br>
-                <span>Delivered to Your Door</span>
-            </h1>
+            <div class="hero-content">
 
-            <p>
-                Shop fresh fruits, vegetables, dairy products,
-                snacks and everyday essentials at the best prices.
-            </p>
+                <span class="hero-tag">
+                    🥬 Fresh & Healthy Everyday
+                </span>
 
-            <div class="hero-buttons">
+                <h1>
+                    Fresh Groceries
+                    <br>
+                    <span>Delivered to Your Door</span>
+                </h1>
 
-                <a href="#products" class="primary-btn">
-                    Shop Now
-                    <i class="fa-solid fa-arrow-right"></i>
+                <p>
+                    Shop fresh fruits, vegetables, dairy products,
+                    snacks and everyday essentials at the best prices.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#products"
+                        class="primary-btn"
+                        aria-label="Shop fresh grocery products">
+
+                        Shop Now
+
+                        <i
+                            class="fa-solid fa-arrow-right"
+                            aria-hidden="true">
+                        </i>
+
+                    </a>
+
+                    <a
+                        href="#categories"
+                        class="secondary-btn"
+                        aria-label="Explore grocery categories">
+
+                        Explore Categories
+
+                    </a>
+
+                </div>
+
+                <div class="hero-features">
+
+                    <div>
+                        <i
+                            class="fa-solid fa-truck-fast"
+                            aria-hidden="true">
+                        </i>
+
+                        <span>Fast Delivery</span>
+                    </div>
+
+                    <div>
+                        <i
+                            class="fa-solid fa-leaf"
+                            aria-hidden="true">
+                        </i>
+
+                        <span>Fresh Products</span>
+                    </div>
+
+                    <div>
+                        <i
+                            class="fa-solid fa-shield-halved"
+                            aria-hidden="true">
+                        </i>
+
+                        <span>Secure Payment</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- HERO / LCP IMAGE -->
+            <div class="hero-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1000&q=70"
+                    alt="Fresh fruits and vegetables in a grocery store"
+                    fetchpriority="high"
+                    decoding="async">
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section
+            class="categories-section"
+            id="categories"
+            aria-labelledby="categories-title">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span>SHOP BY CATEGORY</span>
+
+                    <h2 id="categories-title">
+                        What are you looking for?
+                    </h2>
+
+                </div>
+
+                <a
+                    href="#products"
+                    aria-label="View all grocery products">
+
+                    View All
+
+                    <i
+                        class="fa-solid fa-arrow-right"
+                        aria-hidden="true">
+                    </i>
+
                 </a>
 
-                <a href="#categories" class="secondary-btn">
-                    Explore Categories
+            </div>
+
+
+            <div class="categories">
+
+                <!-- Fruits -->
+
+                <div
+                    class="category-card"
+                    onclick="filterCategory('Fruits')"
+                    role="button"
+                    tabindex="0"
+                    aria-label="View fresh fruits">
+
+                    <div class="category-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?auto=format&fit=crop&w=500&q=75"
+                            alt="Fresh fruits"
+                            loading="lazy"
+                            decoding="async">
+
+                    </div>
+
+                    <h3>Fresh Fruits</h3>
+
+                    <p>25+ Products</p>
+
+                </div>
+
+
+                <!-- Vegetables -->
+
+                <div
+                    class="category-card"
+                    onclick="filterCategory('Vegetables')"
+                    role="button"
+                    tabindex="0"
+                    aria-label="View fresh vegetables">
+
+                    <div class="category-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?auto=format&fit=crop&w=500&q=75"
+                            alt="Fresh vegetables"
+                            loading="lazy"
+                            decoding="async">
+
+                    </div>
+
+                    <h3>Vegetables</h3>
+
+                    <p>40+ Products</p>
+
+                </div>
+
+
+                <!-- Dairy -->
+
+                <div
+                    class="category-card"
+                    onclick="filterCategory('Dairy')"
+                    role="button"
+                    tabindex="0"
+                    aria-label="View dairy and egg products">
+
+                    <div class="category-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?auto=format&fit=crop&w=500&q=75"
+                            alt="Fresh dairy products and eggs"
+                            loading="lazy"
+                            decoding="async">
+
+                    </div>
+
+                    <h3>Dairy & Eggs</h3>
+
+                    <p>20+ Products</p>
+
+                </div>
+
+
+                <!-- Bakery -->
+
+                <div
+                    class="category-card"
+                    onclick="filterCategory('Bakery')"
+                    role="button"
+                    tabindex="0"
+                    aria-label="View bakery products">
+
+                    <div class="category-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=75"
+                            alt="Fresh bakery products"
+                            loading="lazy"
+                            decoding="async">
+
+                    </div>
+
+                    <h3>Bakery</h3>
+
+                    <p>30+ Products</p>
+
+                </div>
+
+
+                <!-- Beverages -->
+
+                <div
+                    class="category-card"
+                    onclick="filterCategory('Beverages')"
+                    role="button"
+                    tabindex="0"
+                    aria-label="View beverages">
+
+                    <div class="category-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=500&q=75"
+                            alt="Fresh beverages"
+                            loading="lazy"
+                            decoding="async">
+
+                    </div>
+
+                    <h3>Beverages</h3>
+
+                    <p>35+ Products</p>
+
+                </div>
+
+
+                <!-- Snacks -->
+
+                <div
+                    class="category-card"
+                    onclick="filterCategory('Snacks')"
+                    role="button"
+                    tabindex="0"
+                    aria-label="View snack products">
+
+                    <div class="category-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1621939514649-280e2aa2a9c1?auto=format&fit=crop&w=500&q=75"
+                            alt="Fresh snack products"
+                            loading="lazy"
+                            decoding="async">
+
+                    </div>
+
+                    <h3>Snacks</h3>
+
+                    <p>50+ Products</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= OFFER BANNER ================= -->
+
+        <section
+            class="offer-section"
+            id="deals"
+            aria-labelledby="deals-title">
+
+            <div class="offer-content">
+
+                <span>LIMITED TIME OFFER</span>
+
+                <h2 id="deals-title">
+                    Get Up To 40% OFF
+                </h2>
+
+                <p>
+                    Fresh groceries at amazing prices.
+                    Don't miss today's special deals.
+                </p>
+
+                <a
+                    href="#products"
+                    class="offer-btn"
+                    aria-label="Shop today's grocery deals">
+
+                    Shop Deals
+
+                    <i
+                        class="fa-solid fa-arrow-right"
+                        aria-hidden="true">
+                    </i>
+
                 </a>
 
             </div>
 
-            <div class="hero-features">
+            <div class="offer-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=700&q=70"
+                    alt="Fresh grocery products offer"
+                    loading="lazy"
+                    decoding="async">
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRODUCTS ================= -->
+
+        <section
+            class="products-section"
+            id="products"
+            aria-labelledby="products-title">
+
+            <div class="section-heading">
 
                 <div>
-                    <i class="fa-solid fa-truck-fast"></i>
-                    <span>Fast Delivery</span>
+
+                    <span>OUR PRODUCTS</span>
+
+                    <h2 id="products-title">
+                        Popular Groceries
+                    </h2>
+
                 </div>
 
-                <div>
-                    <i class="fa-solid fa-leaf"></i>
-                    <span>Fresh Products</span>
-                </div>
+                <div class="product-filters">
 
-                <div>
-                    <i class="fa-solid fa-shield-halved"></i>
-                    <span>Secure Payment</span>
-                </div>
+                    <button
+                        type="button"
+                        class="filter-btn active"
+                        onclick="filterCategory('All')">
 
-            </div>
+                        All
 
-        </div>
-
-        <div class="hero-image">
-
-            <img
-                src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1000&q=85"
-                alt="Fresh groceries">
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= CATEGORIES ================= -->
-
-    <section class="categories-section" id="categories">
-
-        <div class="section-heading">
-
-            <div>
-                <span>SHOP BY CATEGORY</span>
-                <h2>What are you looking for?</h2>
-            </div>
-
-            <a href="#products">
-                View All
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-        </div>
-
-
-        <div class="categories">
-
-            <div class="category-card" onclick="filterCategory('Fruits')">
-                <div class="category-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?auto=format&fit=crop&w=500&q=80"
-                        alt="Fruits">
-                </div>
-                <h3>Fresh Fruits</h3>
-                <p>25+ Products</p>
-            </div>
-
-
-            <div class="category-card" onclick="filterCategory('Vegetables')">
-                <div class="category-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?auto=format&fit=crop&w=500&q=80"
-                        alt="Vegetables">
-                </div>
-                <h3>Vegetables</h3>
-                <p>40+ Products</p>
-            </div>
-
-
-            <div class="category-card" onclick="filterCategory('Dairy')">
-                <div class="category-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?auto=format&fit=crop&w=500&q=80"
-                        alt="Dairy">
-                </div>
-                <h3>Dairy & Eggs</h3>
-                <p>20+ Products</p>
-            </div>
-
-
-            <div class="category-card" onclick="filterCategory('Bakery')">
-                <div class="category-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=80"
-                        alt="Bakery">
-                </div>
-                <h3>Bakery</h3>
-                <p>30+ Products</p>
-            </div>
-
-
-            <div class="category-card" onclick="filterCategory('Beverages')">
-                <div class="category-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=500&q=80"
-                        alt="Beverages">
-                </div>
-                <h3>Beverages</h3>
-                <p>35+ Products</p>
-            </div>
-
-
-            <div class="category-card" onclick="filterCategory('Snacks')">
-                <div class="category-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1621939514649-280e2aa2a9c1?auto=format&fit=crop&w=500&q=80"
-                        alt="Snacks">
-                </div>
-                <h3>Snacks</h3>
-                <p>50+ Products</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= OFFER BANNER ================= -->
-
-    <section class="offer-section" id="deals">
-
-        <div class="offer-content">
-
-            <span>LIMITED TIME OFFER</span>
-
-            <h2>Get Up To 40% OFF</h2>
-
-            <p>
-                Fresh groceries at amazing prices.
-                Don't miss today's special deals.
-            </p>
-
-            <a href="#products" class="offer-btn">
-                Shop Deals
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-        </div>
-
-        <div class="offer-image">
-
-            <img
-                src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=700&q=80"
-                alt="Grocery offer">
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= PRODUCTS ================= -->
-
-    <section class="products-section" id="products">
-
-        <div class="section-heading">
-
-            <div>
-                <span>OUR PRODUCTS</span>
-                <h2>Popular Groceries</h2>
-            </div>
-
-            <div class="product-filters">
-
-                <button
-                    class="filter-btn active"
-                    onclick="filterCategory('All')">
-                    All
-                </button>
-
-                <button
-                    class="filter-btn"
-                    onclick="filterCategory('Fruits')">
-                    Fruits
-                </button>
-
-                <button
-                    class="filter-btn"
-                    onclick="filterCategory('Vegetables')">
-                    Vegetables
-                </button>
-
-                <button
-                    class="filter-btn"
-                    onclick="filterCategory('Dairy')">
-                    Dairy
-                </button>
-
-            </div>
-
-        </div>
-
-
-        <div class="products-grid" id="productsGrid">
-
-
-            <!-- PRODUCT 1 -->
-
-            <div class="product-card" data-category="Fruits">
-
-                <div class="product-image">
-
-                    <span class="discount">20% OFF</span>
-
-                    <button class="wishlist">
-                        <i class="fa-regular fa-heart"></i>
                     </button>
 
-                    <img
-                        src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=500&q=80"
-                        alt="Red Apple">
+                    <button
+                        type="button"
+                        class="filter-btn"
+                        onclick="filterCategory('Fruits')">
 
-                </div>
+                        Fruits
 
-                <div class="product-info">
-
-                    <span class="product-category">
-                        Fresh Fruits
-                    </span>
-
-                    <h3>Fresh Red Apples</h3>
-
-                    <p class="weight">1 kg</p>
-
-                    <div class="rating">
-                        ★★★★★
-                        <span>(124)</span>
-                    </div>
-
-                    <div class="product-bottom">
-
-                        <div>
-                            <span class="old-price">₹180</span>
-                            <strong>₹145</strong>
-                        </div>
-
-                        <button
-                            class="add-btn"
-                            onclick="addToCart('Fresh Red Apples',145)">
-                            <i class="fa-solid fa-plus"></i>
-                            Add
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- PRODUCT 2 -->
-
-            <div class="product-card" data-category="Vegetables">
-
-                <div class="product-image">
-
-                    <span class="discount">25% OFF</span>
-
-                    <button class="wishlist">
-                        <i class="fa-regular fa-heart"></i>
                     </button>
 
-                    <img
-                        src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?auto=format&fit=crop&w=500&q=80"
-                        alt="Vegetables">
+                    <button
+                        type="button"
+                        class="filter-btn"
+                        onclick="filterCategory('Vegetables')">
 
-                </div>
-
-                <div class="product-info">
-
-                    <span class="product-category">
-                        Fresh Vegetables
-                    </span>
-
-                    <h3>Organic Vegetables</h3>
-
-                    <p class="weight">500 g</p>
-
-                    <div class="rating">
-                        ★★★★★
-                        <span>(98)</span>
-                    </div>
-
-                    <div class="product-bottom">
-
-                        <div>
-                            <span class="old-price">₹120</span>
-                            <strong>₹90</strong>
-                        </div>
-
-                        <button
-                            class="add-btn"
-                            onclick="addToCart('Organic Vegetables',90)">
-                            <i class="fa-solid fa-plus"></i>
-                            Add
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- PRODUCT 3 -->
-
-            <div class="product-card" data-category="Fruits">
-
-                <div class="product-image">
-
-                    <span class="discount">15% OFF</span>
-
-                    <button class="wishlist">
-                        <i class="fa-regular fa-heart"></i>
-                    </button>
-
-                    <img
-                        src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&w=500&q=80"
-                        alt="Strawberry">
-
-                </div>
-
-                <div class="product-info">
-
-                    <span class="product-category">
-                        Fresh Fruits
-                    </span>
-
-                    <h3>Fresh Strawberries</h3>
-
-                    <p class="weight">250 g</p>
-
-                    <div class="rating">
-                        ★★★★★
-                        <span>(76)</span>
-                    </div>
-
-                    <div class="product-bottom">
-
-                        <div>
-                            <span class="old-price">₹180</span>
-                            <strong>₹150</strong>
-                        </div>
-
-                        <button
-                            class="add-btn"
-                            onclick="addToCart('Fresh Strawberries',150)">
-                            <i class="fa-solid fa-plus"></i>
-                            Add
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- PRODUCT 4 -->
-
-            <div class="product-card" data-category="Dairy">
-
-                <div class="product-image">
-
-                    <span class="discount">10% OFF</span>
-
-                    <button class="wishlist">
-                        <i class="fa-regular fa-heart"></i>
-                    </button>
-
-                    <img
-                        src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=500&q=80"
-                        alt="Milk">
-
-                </div>
-
-                <div class="product-info">
-
-                    <span class="product-category">
-                        Dairy
-                    </span>
-
-                    <h3>Fresh Milk</h3>
-
-                    <p class="weight">1 Litre</p>
-
-                    <div class="rating">
-                        ★★★★★
-                        <span>(205)</span>
-                    </div>
-
-                    <div class="product-bottom">
-
-                        <div>
-                            <span class="old-price">₹65</span>
-                            <strong>₹58</strong>
-                        </div>
-
-                        <button
-                            class="add-btn"
-                            onclick="addToCart('Fresh Milk',58)">
-                            <i class="fa-solid fa-plus"></i>
-                            Add
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- PRODUCT 5 -->
-
-            <div class="product-card" data-category="Fruits">
-
-                <div class="product-image">
-
-                    <span class="discount">18% OFF</span>
-
-                    <button class="wishlist">
-                        <i class="fa-regular fa-heart"></i>
-                    </button>
-
-                    <img
-                        src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?auto=format&fit=crop&w=500&q=80"
-                        alt="Pineapple">
-
-                </div>
-
-                <div class="product-info">
-
-                    <span class="product-category">
-                        Fresh Fruits
-                    </span>
-
-                    <h3>Sweet Pineapple</h3>
-
-                    <p class="weight">1 Piece</p>
-
-                    <div class="rating">
-                        ★★★★★
-                        <span>(82)</span>
-                    </div>
-
-                    <div class="product-bottom">
-
-                        <div>
-                            <span class="old-price">₹110</span>
-                            <strong>₹90</strong>
-                        </div>
-
-                        <button
-                            class="add-btn"
-                            onclick="addToCart('Sweet Pineapple',90)">
-                            <i class="fa-solid fa-plus"></i>
-                            Add
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- PRODUCT 6 -->
-
-            <div class="product-card" data-category="Vegetables">
-
-                <div class="product-image">
-
-                    <span class="discount">30% OFF</span>
-
-                    <button class="wishlist">
-                        <i class="fa-regular fa-heart"></i>
-                    </button>
-
-                    <img
-                        src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?auto=format&fit=crop&w=500&q=80"
-                        alt="Fresh vegetables">
-
-                </div>
-
-                <div class="product-info">
-
-                    <span class="product-category">
                         Vegetables
-                    </span>
 
-                    <h3>Farm Fresh Vegetables</h3>
+                    </button>
 
-                    <p class="weight">1 kg</p>
+                    <button
+                        type="button"
+                        class="filter-btn"
+                        onclick="filterCategory('Dairy')">
 
-                    <div class="rating">
-                        ★★★★★
-                        <span>(143)</span>
-                    </div>
+                        Dairy
 
-                    <div class="product-bottom">
+                    </button>
 
-                        <div>
-                            <span class="old-price">₹150</span>
-                            <strong>₹105</strong>
-                        </div>
+                </div>
+
+            </div>
+
+
+            <div
+                class="products-grid"
+                id="productsGrid">
+
+
+                <!-- PRODUCT 1 -->
+
+                <div
+                    class="product-card"
+                    data-category="Fruits">
+
+                    <div class="product-image">
+
+                        <span class="discount">
+                            20% OFF
+                        </span>
 
                         <button
-                            class="add-btn"
-                            onclick="addToCart('Farm Fresh Vegetables',105)">
-                            <i class="fa-solid fa-plus"></i>
-                            Add
+                            class="wishlist"
+                            type="button"
+                            aria-label="Add Fresh Red Apples to wishlist">
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
                         </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=500&q=75"
+                            alt="Fresh red apples"
+                            loading="lazy"
+                            decoding="async">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            Fresh Fruits
+                        </span>
+
+                        <h3>Fresh Red Apples</h3>
+
+                        <p class="weight">1 kg</p>
+
+                        <div
+                            class="rating"
+                            aria-label="5 star rating">
+
+                            ★★★★★
+                            <span>(124)</span>
+
+                        </div>
+
+                        <div class="product-bottom">
+
+                            <div>
+                                <span class="old-price">₹180</span>
+                                <strong>₹145</strong>
+                            </div>
+
+                            <button
+                                class="add-btn"
+                                type="button"
+                                onclick="addToCart('Fresh Red Apples',145)"
+                                aria-label="Add Fresh Red Apples to cart">
+
+                                <i
+                                    class="fa-solid fa-plus"
+                                    aria-hidden="true">
+                                </i>
+
+                                Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 2 -->
+
+                <div
+                    class="product-card"
+                    data-category="Vegetables">
+
+                    <div class="product-image">
+
+                        <span class="discount">
+                            25% OFF
+                        </span>
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            aria-label="Add Organic Vegetables to wishlist">
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?auto=format&fit=crop&w=500&q=75"
+                            alt="Organic fresh vegetables"
+                            loading="lazy"
+                            decoding="async">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            Fresh Vegetables
+                        </span>
+
+                        <h3>Organic Vegetables</h3>
+
+                        <p class="weight">500 g</p>
+
+                        <div
+                            class="rating"
+                            aria-label="5 star rating">
+
+                            ★★★★★
+                            <span>(98)</span>
+
+                        </div>
+
+                        <div class="product-bottom">
+
+                            <div>
+                                <span class="old-price">₹120</span>
+                                <strong>₹90</strong>
+                            </div>
+
+                            <button
+                                class="add-btn"
+                                type="button"
+                                onclick="addToCart('Organic Vegetables',90)"
+                                aria-label="Add Organic Vegetables to cart">
+
+                                <i
+                                    class="fa-solid fa-plus"
+                                    aria-hidden="true">
+                                </i>
+
+                                Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 3 -->
+
+                <div
+                    class="product-card"
+                    data-category="Fruits">
+
+                    <div class="product-image">
+
+                        <span class="discount">
+                            15% OFF
+                        </span>
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            aria-label="Add Fresh Strawberries to wishlist">
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&w=500&q=75"
+                            alt="Fresh strawberries"
+                            loading="lazy"
+                            decoding="async">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            Fresh Fruits
+                        </span>
+
+                        <h3>Fresh Strawberries</h3>
+
+                        <p class="weight">250 g</p>
+
+                        <div
+                            class="rating"
+                            aria-label="5 star rating">
+
+                            ★★★★★
+                            <span>(76)</span>
+
+                        </div>
+
+                        <div class="product-bottom">
+
+                            <div>
+                                <span class="old-price">₹180</span>
+                                <strong>₹150</strong>
+                            </div>
+
+                            <button
+                                class="add-btn"
+                                type="button"
+                                onclick="addToCart('Fresh Strawberries',150)"
+                                aria-label="Add Fresh Strawberries to cart">
+
+                                <i
+                                    class="fa-solid fa-plus"
+                                    aria-hidden="true">
+                                </i>
+
+                                Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 4 -->
+
+                <div
+                    class="product-card"
+                    data-category="Dairy">
+
+                    <div class="product-image">
+
+                        <span class="discount">
+                            10% OFF
+                        </span>
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            aria-label="Add Fresh Milk to wishlist">
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=500&q=75"
+                            alt="Fresh milk"
+                            loading="lazy"
+                            decoding="async">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            Dairy
+                        </span>
+
+                        <h3>Fresh Milk</h3>
+
+                        <p class="weight">1 Litre</p>
+
+                        <div
+                            class="rating"
+                            aria-label="5 star rating">
+
+                            ★★★★★
+                            <span>(205)</span>
+
+                        </div>
+
+                        <div class="product-bottom">
+
+                            <div>
+                                <span class="old-price">₹65</span>
+                                <strong>₹58</strong>
+                            </div>
+
+                            <button
+                                class="add-btn"
+                                type="button"
+                                onclick="addToCart('Fresh Milk',58)"
+                                aria-label="Add Fresh Milk to cart">
+
+                                <i
+                                    class="fa-solid fa-plus"
+                                    aria-hidden="true">
+                                </i>
+
+                                Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 5 -->
+
+                <div
+                    class="product-card"
+                    data-category="Fruits">
+
+                    <div class="product-image">
+
+                        <span class="discount">
+                            18% OFF
+                        </span>
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            aria-label="Add Sweet Pineapple to wishlist">
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?auto=format&fit=crop&w=500&q=75"
+                            alt="Fresh sweet pineapple"
+                            loading="lazy"
+                            decoding="async">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            Fresh Fruits
+                        </span>
+
+                        <h3>Sweet Pineapple</h3>
+
+                        <p class="weight">1 Piece</p>
+
+                        <div
+                            class="rating"
+                            aria-label="5 star rating">
+
+                            ★★★★★
+                            <span>(82)</span>
+
+                        </div>
+
+                        <div class="product-bottom">
+
+                            <div>
+                                <span class="old-price">₹110</span>
+                                <strong>₹90</strong>
+                            </div>
+
+                            <button
+                                class="add-btn"
+                                type="button"
+                                onclick="addToCart('Sweet Pineapple',90)"
+                                aria-label="Add Sweet Pineapple to cart">
+
+                                <i
+                                    class="fa-solid fa-plus"
+                                    aria-hidden="true">
+                                </i>
+
+                                Add
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRODUCT 6 -->
+
+                <div
+                    class="product-card"
+                    data-category="Vegetables">
+
+                    <div class="product-image">
+
+                        <span class="discount">
+                            30% OFF
+                        </span>
+
+                        <button
+                            class="wishlist"
+                            type="button"
+                            aria-label="Add Farm Fresh Vegetables to wishlist">
+
+                            <i
+                                class="fa-regular fa-heart"
+                                aria-hidden="true">
+                            </i>
+
+                        </button>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?auto=format&fit=crop&w=500&q=75"
+                            alt="Farm fresh vegetables"
+                            loading="lazy"
+                            decoding="async">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <span class="product-category">
+                            Vegetables
+                        </span>
+
+                        <h3>Farm Fresh Vegetables</h3>
+
+                        <p class="weight">1 kg</p>
+
+                        <div
+                            class="rating"
+                            aria-label="5 star rating">
+
+                            ★★★★★
+                            <span>(143)</span>
+
+                        </div>
+
+                        <div class="product-bottom">
+
+                            <div>
+                                <span class="old-price">₹150</span>
+                                <strong>₹105</strong>
+                            </div>
+
+                            <button
+                                class="add-btn"
+                                type="button"
+                                onclick="addToCart('Farm Fresh Vegetables',105)"
+                                aria-label="Add Farm Fresh Vegetables to cart">
+
+                                <i
+                                    class="fa-solid fa-plus"
+                                    aria-hidden="true">
+                                </i>
+
+                                Add
+
+                            </button>
+
+                        </div>
 
                     </div>
 
@@ -658,104 +1050,143 @@
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- ================= FEATURES ================= -->
+        <!-- ================= FEATURES ================= -->
 
-    <section class="features" id="about">
+        <section
+            class="features"
+            id="about"
+            aria-label="FreshCart benefits">
 
-        <div class="feature">
+            <div class="feature">
 
-            <div class="feature-icon">
-                <i class="fa-solid fa-truck-fast"></i>
+                <div class="feature-icon">
+                    <i
+                        class="fa-solid fa-truck-fast"
+                        aria-hidden="true">
+                    </i>
+                </div>
+
+                <div>
+                    <h3>Fast Delivery</h3>
+                    <p>
+                        Quick and reliable delivery to your doorstep.
+                    </p>
+                </div>
+
             </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    <i
+                        class="fa-solid fa-leaf"
+                        aria-hidden="true">
+                    </i>
+                </div>
+
+                <div>
+                    <h3>100% Fresh</h3>
+                    <p>
+                        Fresh and carefully selected products.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    <i
+                        class="fa-solid fa-lock"
+                        aria-hidden="true">
+                    </i>
+                </div>
+
+                <div>
+                    <h3>Secure Payment</h3>
+                    <p>
+                        Your payments are safe and protected.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    <i
+                        class="fa-solid fa-headset"
+                        aria-hidden="true">
+                    </i>
+                </div>
+
+                <div>
+                    <h3>24/7 Support</h3>
+                    <p>
+                        We're always here to help you.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= NEWSLETTER ================= -->
+
+        <section
+            class="newsletter"
+            aria-labelledby="newsletter-title">
 
             <div>
-                <h3>Fast Delivery</h3>
-                <p>Quick and reliable delivery to your doorstep.</p>
+
+                <span>STAY UPDATED</span>
+
+                <h2 id="newsletter-title">
+                    Get grocery deals in your inbox
+                </h2>
+
+                <p>
+                    Subscribe to receive our latest offers and discounts.
+                </p>
+
             </div>
 
-        </div>
+            <form onsubmit="subscribe(event)">
 
+                <label
+                    for="email"
+                    class="sr-only">
+                    Email address
+                </label>
 
-        <div class="feature">
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email address"
+                    autocomplete="email"
+                    required
+                    aria-label="Enter your email address">
 
-            <div class="feature-icon">
-                <i class="fa-solid fa-leaf"></i>
-            </div>
+                <button
+                    type="submit"
+                    aria-label="Subscribe to FreshCart newsletter">
 
-            <div>
-                <h3>100% Fresh</h3>
-                <p>Fresh and carefully selected products.</p>
-            </div>
+                    Subscribe
 
-        </div>
+                </button>
 
+            </form>
 
-        <div class="feature">
+        </section>
 
-            <div class="feature-icon">
-                <i class="fa-solid fa-lock"></i>
-            </div>
-
-            <div>
-                <h3>Secure Payment</h3>
-                <p>Your payments are safe and protected.</p>
-            </div>
-
-        </div>
-
-
-        <div class="feature">
-
-            <div class="feature-icon">
-                <i class="fa-solid fa-headset"></i>
-            </div>
-
-            <div>
-                <h3>24/7 Support</h3>
-                <p>We're always here to help you.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= NEWSLETTER ================= -->
-
-    <section class="newsletter">
-
-        <div>
-
-            <span>STAY UPDATED</span>
-
-            <h2>Get grocery deals in your inbox</h2>
-
-            <p>
-                Subscribe to receive our latest offers and discounts.
-            </p>
-
-        </div>
-
-        <form onsubmit="subscribe(event)">
-
-            <input
-                type="email"
-                id="email"
-                placeholder="Enter your email address"
-                required>
-
-            <button type="submit">
-                Subscribe
-            </button>
-
-        </form>
-
-    </section>
+    </main>
 
 
     <!-- ================= FOOTER ================= -->
@@ -767,8 +1198,16 @@
             <div class="footer-about">
 
                 <div class="logo footer-logo">
-                    <i class="fa-solid fa-basket-shopping"></i>
-                    <span>Fresh<span>Cart</span></span>
+
+                    <i
+                        class="fa-solid fa-basket-shopping"
+                        aria-hidden="true">
+                    </i>
+
+                    <span>
+                        Fresh<span>Cart</span>
+                    </span>
+
                 </div>
 
                 <p>
@@ -778,20 +1217,48 @@
 
                 <div class="social-icons">
 
-                    <a href="#">
-                        <i class="fa-brands fa-facebook-f"></i>
+                    <a
+                        href="#"
+                        aria-label="FreshCart on Facebook">
+
+                        <i
+                            class="fa-brands fa-facebook-f"
+                            aria-hidden="true">
+                        </i>
+
                     </a>
 
-                    <a href="#">
-                        <i class="fa-brands fa-instagram"></i>
+                    <a
+                        href="#"
+                        aria-label="FreshCart on Instagram">
+
+                        <i
+                            class="fa-brands fa-instagram"
+                            aria-hidden="true">
+                        </i>
+
                     </a>
 
-                    <a href="#">
-                        <i class="fa-brands fa-twitter"></i>
+                    <a
+                        href="#"
+                        aria-label="FreshCart on Twitter">
+
+                        <i
+                            class="fa-brands fa-twitter"
+                            aria-hidden="true">
+                        </i>
+
                     </a>
 
-                    <a href="#">
-                        <i class="fa-brands fa-youtube"></i>
+                    <a
+                        href="#"
+                        aria-label="FreshCart on YouTube">
+
+                        <i
+                            class="fa-brands fa-youtube"
+                            aria-hidden="true">
+                        </i>
+
                     </a>
 
                 </div>
@@ -804,8 +1271,11 @@
                 <h3>Quick Links</h3>
 
                 <a href="#home">Home</a>
+
                 <a href="#categories">Categories</a>
+
                 <a href="#products">Products</a>
+
                 <a href="#deals">Deals</a>
 
             </div>
@@ -816,8 +1286,11 @@
                 <h3>Customer Service</h3>
 
                 <a href="#">My Account</a>
+
                 <a href="#">Order Tracking</a>
+
                 <a href="#">Shipping Information</a>
+
                 <a href="#">Returns & Refunds</a>
 
             </div>
@@ -828,17 +1301,29 @@
                 <h3>Contact Us</h3>
 
                 <p>
-                    <i class="fa-solid fa-location-dot"></i>
+                    <i
+                        class="fa-solid fa-location-dot"
+                        aria-hidden="true">
+                    </i>
+
                     Chennai, Tamil Nadu
                 </p>
 
                 <p>
-                    <i class="fa-solid fa-phone"></i>
+                    <i
+                        class="fa-solid fa-phone"
+                        aria-hidden="true">
+                    </i>
+
                     +91 98765 43210
                 </p>
 
                 <p>
-                    <i class="fa-solid fa-envelope"></i>
+                    <i
+                        class="fa-solid fa-envelope"
+                        aria-hidden="true">
+                    </i>
+
                     support@freshcart.com
                 </p>
 
@@ -854,8 +1339,11 @@
             </p>
 
             <div>
+
                 <span>Privacy Policy</span>
+
                 <span>Terms & Conditions</span>
+
             </div>
 
         </div>
@@ -865,50 +1353,121 @@
 
     <!-- ================= CART SIDEBAR ================= -->
 
-    <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+    <div
+        class="cart-overlay"
+        id="cartOverlay"
+        onclick="closeCart()"
+        aria-hidden="true">
+    </div>
 
-    <div class="cart-sidebar" id="cartSidebar">
+
+    <div
+        class="cart-sidebar"
+        id="cartSidebar"
+        aria-label="Shopping cart">
 
         <div class="cart-header">
 
             <h2>
-                <i class="fa-solid fa-cart-shopping"></i>
+
+                <i
+                    class="fa-solid fa-cart-shopping"
+                    aria-hidden="true">
+                </i>
+
                 Your Cart
+
             </h2>
 
-            <button onclick="closeCart()">
-                <i class="fa-solid fa-xmark"></i>
+            <button
+                type="button"
+                onclick="closeCart()"
+                aria-label="Close shopping cart">
+
+                <i
+                    class="fa-solid fa-xmark"
+                    aria-hidden="true">
+                </i>
+
             </button>
 
         </div>
 
-        <div id="cartItems" class="cart-items">
+
+        <div
+            id="cartItems"
+            class="cart-items">
 
             <div class="empty-cart">
-                <i class="fa-solid fa-cart-shopping"></i>
+
+                <i
+                    class="fa-solid fa-cart-shopping"
+                    aria-hidden="true">
+                </i>
+
                 <h3>Your cart is empty</h3>
-                <p>Add some fresh groceries!</p>
+
+                <p>
+                    Add some fresh groceries!
+                </p>
+
             </div>
 
         </div>
+
 
         <div class="cart-footer">
 
             <div class="cart-total">
 
                 <span>Total</span>
-                <strong id="cartTotal">₹0</strong>
+
+                <strong id="cartTotal">
+                    ₹0
+                </strong>
 
             </div>
 
-            <button class="checkout-btn" onclick="checkout()">
+            <button
+                class="checkout-btn"
+                type="button"
+                onclick="checkout()"
+                aria-label="Proceed to checkout">
+
                 Proceed to Checkout
-                <i class="fa-solid fa-arrow-right"></i>
+
+                <i
+                    class="fa-solid fa-arrow-right"
+                    aria-hidden="true">
+                </i>
+
             </button>
 
         </div>
 
     </div>
+
+
+    <!-- ================= ACCESSIBILITY CSS ================= -->
+
+    <style>
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .category-card:focus {
+            outline: 3px solid #4CAF50;
+            outline-offset: 3px;
+        }
+    </style>
 
 
     <!-- JavaScript -->
@@ -917,4 +1476,3 @@
 </body>
 
 </html>
-
