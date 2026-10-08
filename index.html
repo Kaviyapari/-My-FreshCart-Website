@@ -16,7 +16,7 @@
     <link rel="canonical"
         href="https://kaviyapari.github.io/-My-FreshCart-Website/">
 
-    <!-- Open Graph / Social Sharing -->
+    <!-- Open Graph -->
     <meta property="og:title"
         content="FreshCart - Online Grocery Store">
 
@@ -59,23 +59,25 @@
     <header class="header">
 
         <div class="logo">
-            <i class="fa-solid fa-basket-shopping"></i>
+            <i class="fa-solid fa-basket-shopping" aria-hidden="true"></i>
             <span>Fresh<span>Cart</span></span>
         </div>
 
         <div class="location">
-            <i class="fa-solid fa-location-dot"></i>
+
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
 
             <div>
                 <small>Deliver to</small>
                 <strong>Chennai, India</strong>
             </div>
+
         </div>
 
         <!-- Search -->
         <div class="search-box">
 
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
 
             <label for="searchInput" class="sr-only">
                 Search products
@@ -85,6 +87,7 @@
                 type="search"
                 id="searchInput"
                 placeholder="Search for groceries, fruits, vegetables..."
+                autocomplete="off"
                 aria-label="Search for groceries, fruits and vegetables">
 
         </div>
@@ -97,8 +100,7 @@
                 type="button"
                 aria-label="Add product to wishlist">
 
-                <i class="fa-regular fa-heart"
-                    aria-hidden="true"></i>
+                <i class="fa-regular fa-heart" aria-hidden="true"></i>
 
             </button>
 
@@ -109,8 +111,7 @@
                 onclick="openCart()"
                 aria-label="Open shopping cart">
 
-                <i class="fa-solid fa-cart-shopping"
-                    aria-hidden="true"></i>
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
 
                 <span id="cartCount">0</span>
 
@@ -122,10 +123,9 @@
                 type="button"
                 aria-label="Login to FreshCart">
 
-                <i class="fa-regular fa-user"
-                    aria-hidden="true"></i>
+                <i class="fa-regular fa-user" aria-hidden="true"></i>
 
-                Login
+                <span>Login</span>
 
             </button>
 
@@ -141,15 +141,10 @@
         <div class="nav-container">
 
             <a href="#home">Home</a>
-
             <a href="#categories">Categories</a>
-
             <a href="#products">Products</a>
-
             <a href="#deals">Deals</a>
-
             <a href="#about">About Us</a>
-
             <a href="#contact">Contact</a>
 
         </div>
@@ -157,7 +152,7 @@
     </nav>
 
 
-    <!-- ================= MAIN CONTENT ================= -->
+    <!-- ================= MAIN ================= -->
 
     <main>
 
@@ -212,29 +207,17 @@
                 <div class="hero-features">
 
                     <div>
-                        <i
-                            class="fa-solid fa-truck-fast"
-                            aria-hidden="true">
-                        </i>
-
+                        <i class="fa-solid fa-truck-fast" aria-hidden="true"></i>
                         <span>Fast Delivery</span>
                     </div>
 
                     <div>
-                        <i
-                            class="fa-solid fa-leaf"
-                            aria-hidden="true">
-                        </i>
-
+                        <i class="fa-solid fa-leaf" aria-hidden="true"></i>
                         <span>Fresh Products</span>
                     </div>
 
                     <div>
-                        <i
-                            class="fa-solid fa-shield-halved"
-                            aria-hidden="true">
-                        </i>
-
+                        <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
                         <span>Secure Payment</span>
                     </div>
 
@@ -242,12 +225,14 @@
 
             </div>
 
-            <!-- HERO / LCP IMAGE -->
+            <!-- LCP / HERO IMAGE -->
             <div class="hero-image">
 
                 <img
-                    src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1000&q=70"
+                    src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=65"
                     alt="Fresh fruits and vegetables in a grocery store"
+                    width="900"
+                    height="600"
                     fetchpriority="high"
                     decoding="async">
 
@@ -280,11 +265,7 @@
                     aria-label="View all grocery products">
 
                     View All
-
-                    <i
-                        class="fa-solid fa-arrow-right"
-                        aria-hidden="true">
-                    </i>
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
 
                 </a>
 
@@ -292,8 +273,6 @@
 
 
             <div class="categories">
-
-                <!-- Fruits -->
 
                 <div
                     class="category-card"
@@ -305,21 +284,20 @@
                     <div class="category-image">
 
                         <img
-                            src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?auto=format&fit=crop&w=500&q=75"
+                            src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?auto=format&fit=crop&w=400&q=65"
                             alt="Fresh fruits"
+                            width="400"
+                            height="300"
                             loading="lazy"
                             decoding="async">
 
                     </div>
 
                     <h3>Fresh Fruits</h3>
-
                     <p>25+ Products</p>
 
                 </div>
 
-
-                <!-- Vegetables -->
 
                 <div
                     class="category-card"
@@ -331,21 +309,20 @@
                     <div class="category-image">
 
                         <img
-                            src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?auto=format&fit=crop&w=500&q=75"
+                            src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?auto=format&fit=crop&w=400&q=65"
                             alt="Fresh vegetables"
+                            width="400"
+                            height="300"
                             loading="lazy"
                             decoding="async">
 
                     </div>
 
                     <h3>Vegetables</h3>
-
                     <p>40+ Products</p>
 
                 </div>
 
-
-                <!-- Dairy -->
 
                 <div
                     class="category-card"
@@ -357,21 +334,20 @@
                     <div class="category-image">
 
                         <img
-                            src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?auto=format&fit=crop&w=500&q=75"
+                            src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?auto=format&fit=crop&w=400&q=65"
                             alt="Fresh dairy products and eggs"
+                            width="400"
+                            height="300"
                             loading="lazy"
                             decoding="async">
 
                     </div>
 
                     <h3>Dairy & Eggs</h3>
-
                     <p>20+ Products</p>
 
                 </div>
 
-
-                <!-- Bakery -->
 
                 <div
                     class="category-card"
@@ -383,21 +359,20 @@
                     <div class="category-image">
 
                         <img
-                            src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=75"
+                            src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=65"
                             alt="Fresh bakery products"
+                            width="400"
+                            height="300"
                             loading="lazy"
                             decoding="async">
 
                     </div>
 
                     <h3>Bakery</h3>
-
                     <p>30+ Products</p>
 
                 </div>
 
-
-                <!-- Beverages -->
 
                 <div
                     class="category-card"
@@ -409,21 +384,20 @@
                     <div class="category-image">
 
                         <img
-                            src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=500&q=75"
+                            src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=400&q=65"
                             alt="Fresh beverages"
+                            width="400"
+                            height="300"
                             loading="lazy"
                             decoding="async">
 
                     </div>
 
                     <h3>Beverages</h3>
-
                     <p>35+ Products</p>
 
                 </div>
 
-
-                <!-- Snacks -->
 
                 <div
                     class="category-card"
@@ -435,15 +409,16 @@
                     <div class="category-image">
 
                         <img
-                            src="https://images.unsplash.com/photo-1621939514649-280e2aa2a9c1?auto=format&fit=crop&w=500&q=75"
+                            src="https://images.unsplash.com/photo-1621939514649-280e2aa2a9c1?auto=format&fit=crop&w=400&q=65"
                             alt="Fresh snack products"
+                            width="400"
+                            height="300"
                             loading="lazy"
                             decoding="async">
 
                     </div>
 
                     <h3>Snacks</h3>
-
                     <p>50+ Products</p>
 
                 </div>
@@ -453,7 +428,7 @@
         </section>
 
 
-        <!-- ================= OFFER BANNER ================= -->
+        <!-- ================= OFFER ================= -->
 
         <section
             class="offer-section"
@@ -479,11 +454,7 @@
                     aria-label="Shop today's grocery deals">
 
                     Shop Deals
-
-                    <i
-                        class="fa-solid fa-arrow-right"
-                        aria-hidden="true">
-                    </i>
+                    <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
 
                 </a>
 
@@ -492,8 +463,10 @@
             <div class="offer-image">
 
                 <img
-                    src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=700&q=70"
+                    src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=65"
                     alt="Fresh grocery products offer"
+                    width="600"
+                    height="400"
                     loading="lazy"
                     decoding="async">
 
@@ -527,36 +500,28 @@
                         type="button"
                         class="filter-btn active"
                         onclick="filterCategory('All')">
-
                         All
-
                     </button>
 
                     <button
                         type="button"
                         class="filter-btn"
                         onclick="filterCategory('Fruits')">
-
                         Fruits
-
                     </button>
 
                     <button
                         type="button"
                         class="filter-btn"
                         onclick="filterCategory('Vegetables')">
-
                         Vegetables
-
                     </button>
 
                     <button
                         type="button"
                         class="filter-btn"
                         onclick="filterCategory('Dairy')">
-
                         Dairy
-
                     </button>
 
                 </div>
@@ -564,38 +529,30 @@
             </div>
 
 
-            <div
-                class="products-grid"
-                id="productsGrid">
-
+            <div class="products-grid" id="productsGrid">
 
                 <!-- PRODUCT 1 -->
 
-                <div
-                    class="product-card"
-                    data-category="Fruits">
+                <div class="product-card" data-category="Fruits">
 
                     <div class="product-image">
 
-                        <span class="discount">
-                            20% OFF
-                        </span>
+                        <span class="discount">20% OFF</span>
 
                         <button
                             class="wishlist"
                             type="button"
                             aria-label="Add Fresh Red Apples to wishlist">
 
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
+                            <i class="fa-regular fa-heart" aria-hidden="true"></i>
 
                         </button>
 
                         <img
-                            src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=500&q=75"
+                            src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=400&q=65"
                             alt="Fresh red apples"
+                            width="400"
+                            height="300"
                             loading="lazy"
                             decoding="async">
 
@@ -611,13 +568,9 @@
 
                         <p class="weight">1 kg</p>
 
-                        <div
-                            class="rating"
-                            aria-label="5 star rating">
-
+                        <div class="rating" aria-label="5 star rating">
                             ★★★★★
                             <span>(124)</span>
-
                         </div>
 
                         <div class="product-bottom">
@@ -633,11 +586,7 @@
                                 onclick="addToCart('Fresh Red Apples',145)"
                                 aria-label="Add Fresh Red Apples to cart">
 
-                                <i
-                                    class="fa-solid fa-plus"
-                                    aria-hidden="true">
-                                </i>
-
+                                <i class="fa-solid fa-plus" aria-hidden="true"></i>
                                 Add
 
                             </button>
@@ -651,31 +600,26 @@
 
                 <!-- PRODUCT 2 -->
 
-                <div
-                    class="product-card"
-                    data-category="Vegetables">
+                <div class="product-card" data-category="Vegetables">
 
                     <div class="product-image">
 
-                        <span class="discount">
-                            25% OFF
-                        </span>
+                        <span class="discount">25% OFF</span>
 
                         <button
                             class="wishlist"
                             type="button"
                             aria-label="Add Organic Vegetables to wishlist">
 
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
+                            <i class="fa-regular fa-heart" aria-hidden="true"></i>
 
                         </button>
 
                         <img
-                            src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?auto=format&fit=crop&w=500&q=75"
+                            src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?auto=format&fit=crop&w=400&q=65"
                             alt="Organic fresh vegetables"
+                            width="400"
+                            height="300"
                             loading="lazy"
                             decoding="async">
 
@@ -691,13 +635,9 @@
 
                         <p class="weight">500 g</p>
 
-                        <div
-                            class="rating"
-                            aria-label="5 star rating">
-
+                        <div class="rating" aria-label="5 star rating">
                             ★★★★★
                             <span>(98)</span>
-
                         </div>
 
                         <div class="product-bottom">
@@ -713,11 +653,7 @@
                                 onclick="addToCart('Organic Vegetables',90)"
                                 aria-label="Add Organic Vegetables to cart">
 
-                                <i
-                                    class="fa-solid fa-plus"
-                                    aria-hidden="true">
-                                </i>
-
+                                <i class="fa-solid fa-plus" aria-hidden="true"></i>
                                 Add
 
                             </button>
@@ -731,31 +667,26 @@
 
                 <!-- PRODUCT 3 -->
 
-                <div
-                    class="product-card"
-                    data-category="Fruits">
+                <div class="product-card" data-category="Fruits">
 
                     <div class="product-image">
 
-                        <span class="discount">
-                            15% OFF
-                        </span>
+                        <span class="discount">15% OFF</span>
 
                         <button
                             class="wishlist"
                             type="button"
                             aria-label="Add Fresh Strawberries to wishlist">
 
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
+                            <i class="fa-regular fa-heart" aria-hidden="true"></i>
 
                         </button>
 
                         <img
-                            src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&w=500&q=75"
+                            src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&w=400&q=65"
                             alt="Fresh strawberries"
+                            width="400"
+                            height="300"
                             loading="lazy"
                             decoding="async">
 
@@ -771,13 +702,9 @@
 
                         <p class="weight">250 g</p>
 
-                        <div
-                            class="rating"
-                            aria-label="5 star rating">
-
+                        <div class="rating" aria-label="5 star rating">
                             ★★★★★
                             <span>(76)</span>
-
                         </div>
 
                         <div class="product-bottom">
@@ -793,11 +720,7 @@
                                 onclick="addToCart('Fresh Strawberries',150)"
                                 aria-label="Add Fresh Strawberries to cart">
 
-                                <i
-                                    class="fa-solid fa-plus"
-                                    aria-hidden="true">
-                                </i>
-
+                                <i class="fa-solid fa-plus" aria-hidden="true"></i>
                                 Add
 
                             </button>
@@ -811,31 +734,26 @@
 
                 <!-- PRODUCT 4 -->
 
-                <div
-                    class="product-card"
-                    data-category="Dairy">
+                <div class="product-card" data-category="Dairy">
 
                     <div class="product-image">
 
-                        <span class="discount">
-                            10% OFF
-                        </span>
+                        <span class="discount">10% OFF</span>
 
                         <button
                             class="wishlist"
                             type="button"
                             aria-label="Add Fresh Milk to wishlist">
 
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
+                            <i class="fa-regular fa-heart" aria-hidden="true"></i>
 
                         </button>
 
                         <img
-                            src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=500&q=75"
+                            src="https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=400&q=65"
                             alt="Fresh milk"
+                            width="400"
+                            height="300"
                             loading="lazy"
                             decoding="async">
 
@@ -851,13 +769,9 @@
 
                         <p class="weight">1 Litre</p>
 
-                        <div
-                            class="rating"
-                            aria-label="5 star rating">
-
+                        <div class="rating" aria-label="5 star rating">
                             ★★★★★
                             <span>(205)</span>
-
                         </div>
 
                         <div class="product-bottom">
@@ -873,11 +787,7 @@
                                 onclick="addToCart('Fresh Milk',58)"
                                 aria-label="Add Fresh Milk to cart">
 
-                                <i
-                                    class="fa-solid fa-plus"
-                                    aria-hidden="true">
-                                </i>
-
+                                <i class="fa-solid fa-plus" aria-hidden="true"></i>
                                 Add
 
                             </button>
@@ -891,31 +801,26 @@
 
                 <!-- PRODUCT 5 -->
 
-                <div
-                    class="product-card"
-                    data-category="Fruits">
+                <div class="product-card" data-category="Fruits">
 
                     <div class="product-image">
 
-                        <span class="discount">
-                            18% OFF
-                        </span>
+                        <span class="discount">18% OFF</span>
 
                         <button
                             class="wishlist"
                             type="button"
                             aria-label="Add Sweet Pineapple to wishlist">
 
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
+                            <i class="fa-regular fa-heart" aria-hidden="true"></i>
 
                         </button>
 
                         <img
-                            src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?auto=format&fit=crop&w=500&q=75"
+                            src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?auto=format&fit=crop&w=400&q=65"
                             alt="Fresh sweet pineapple"
+                            width="400"
+                            height="300"
                             loading="lazy"
                             decoding="async">
 
@@ -931,13 +836,9 @@
 
                         <p class="weight">1 Piece</p>
 
-                        <div
-                            class="rating"
-                            aria-label="5 star rating">
-
+                        <div class="rating" aria-label="5 star rating">
                             ★★★★★
                             <span>(82)</span>
-
                         </div>
 
                         <div class="product-bottom">
@@ -953,11 +854,7 @@
                                 onclick="addToCart('Sweet Pineapple',90)"
                                 aria-label="Add Sweet Pineapple to cart">
 
-                                <i
-                                    class="fa-solid fa-plus"
-                                    aria-hidden="true">
-                                </i>
-
+                                <i class="fa-solid fa-plus" aria-hidden="true"></i>
                                 Add
 
                             </button>
@@ -971,31 +868,26 @@
 
                 <!-- PRODUCT 6 -->
 
-                <div
-                    class="product-card"
-                    data-category="Vegetables">
+                <div class="product-card" data-category="Vegetables">
 
                     <div class="product-image">
 
-                        <span class="discount">
-                            30% OFF
-                        </span>
+                        <span class="discount">30% OFF</span>
 
                         <button
                             class="wishlist"
                             type="button"
                             aria-label="Add Farm Fresh Vegetables to wishlist">
 
-                            <i
-                                class="fa-regular fa-heart"
-                                aria-hidden="true">
-                            </i>
+                            <i class="fa-regular fa-heart" aria-hidden="true"></i>
 
                         </button>
 
                         <img
-                            src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?auto=format&fit=crop&w=500&q=75"
+                            src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?auto=format&fit=crop&w=400&q=65"
                             alt="Farm fresh vegetables"
+                            width="400"
+                            height="300"
                             loading="lazy"
                             decoding="async">
 
@@ -1011,13 +903,9 @@
 
                         <p class="weight">1 kg</p>
 
-                        <div
-                            class="rating"
-                            aria-label="5 star rating">
-
+                        <div class="rating" aria-label="5 star rating">
                             ★★★★★
                             <span>(143)</span>
-
                         </div>
 
                         <div class="product-bottom">
@@ -1033,11 +921,7 @@
                                 onclick="addToCart('Farm Fresh Vegetables',105)"
                                 aria-label="Add Farm Fresh Vegetables to cart">
 
-                                <i
-                                    class="fa-solid fa-plus"
-                                    aria-hidden="true">
-                                </i>
-
+                                <i class="fa-solid fa-plus" aria-hidden="true"></i>
                                 Add
 
                             </button>
@@ -1063,74 +947,51 @@
             <div class="feature">
 
                 <div class="feature-icon">
-                    <i
-                        class="fa-solid fa-truck-fast"
-                        aria-hidden="true">
-                    </i>
+                    <i class="fa-solid fa-truck-fast" aria-hidden="true"></i>
                 </div>
 
                 <div>
                     <h3>Fast Delivery</h3>
-                    <p>
-                        Quick and reliable delivery to your doorstep.
-                    </p>
+                    <p>Quick and reliable delivery to your doorstep.</p>
                 </div>
 
             </div>
 
-
             <div class="feature">
 
                 <div class="feature-icon">
-                    <i
-                        class="fa-solid fa-leaf"
-                        aria-hidden="true">
-                    </i>
+                    <i class="fa-solid fa-leaf" aria-hidden="true"></i>
                 </div>
 
                 <div>
                     <h3>100% Fresh</h3>
-                    <p>
-                        Fresh and carefully selected products.
-                    </p>
+                    <p>Fresh and carefully selected products.</p>
                 </div>
 
             </div>
 
-
             <div class="feature">
 
                 <div class="feature-icon">
-                    <i
-                        class="fa-solid fa-lock"
-                        aria-hidden="true">
-                    </i>
+                    <i class="fa-solid fa-lock" aria-hidden="true"></i>
                 </div>
 
                 <div>
                     <h3>Secure Payment</h3>
-                    <p>
-                        Your payments are safe and protected.
-                    </p>
+                    <p>Your payments are safe and protected.</p>
                 </div>
 
             </div>
 
-
             <div class="feature">
 
                 <div class="feature-icon">
-                    <i
-                        class="fa-solid fa-headset"
-                        aria-hidden="true">
-                    </i>
+                    <i class="fa-solid fa-headset" aria-hidden="true"></i>
                 </div>
 
                 <div>
                     <h3>24/7 Support</h3>
-                    <p>
-                        We're always here to help you.
-                    </p>
+                    <p>We're always here to help you.</p>
                 </div>
 
             </div>
@@ -1217,48 +1078,20 @@
 
                 <div class="social-icons">
 
-                    <a
-                        href="#"
-                        aria-label="FreshCart on Facebook">
-
-                        <i
-                            class="fa-brands fa-facebook-f"
-                            aria-hidden="true">
-                        </i>
-
+                    <a href="#" aria-label="FreshCart on Facebook">
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
                     </a>
 
-                    <a
-                        href="#"
-                        aria-label="FreshCart on Instagram">
-
-                        <i
-                            class="fa-brands fa-instagram"
-                            aria-hidden="true">
-                        </i>
-
+                    <a href="#" aria-label="FreshCart on Instagram">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                     </a>
 
-                    <a
-                        href="#"
-                        aria-label="FreshCart on Twitter">
-
-                        <i
-                            class="fa-brands fa-twitter"
-                            aria-hidden="true">
-                        </i>
-
+                    <a href="#" aria-label="FreshCart on Twitter">
+                        <i class="fa-brands fa-twitter" aria-hidden="true"></i>
                     </a>
 
-                    <a
-                        href="#"
-                        aria-label="FreshCart on YouTube">
-
-                        <i
-                            class="fa-brands fa-youtube"
-                            aria-hidden="true">
-                        </i>
-
+                    <a href="#" aria-label="FreshCart on YouTube">
+                        <i class="fa-brands fa-youtube" aria-hidden="true"></i>
                     </a>
 
                 </div>
@@ -1271,11 +1104,8 @@
                 <h3>Quick Links</h3>
 
                 <a href="#home">Home</a>
-
                 <a href="#categories">Categories</a>
-
                 <a href="#products">Products</a>
-
                 <a href="#deals">Deals</a>
 
             </div>
@@ -1286,11 +1116,8 @@
                 <h3>Customer Service</h3>
 
                 <a href="#">My Account</a>
-
                 <a href="#">Order Tracking</a>
-
                 <a href="#">Shipping Information</a>
-
                 <a href="#">Returns & Refunds</a>
 
             </div>
@@ -1301,29 +1128,17 @@
                 <h3>Contact Us</h3>
 
                 <p>
-                    <i
-                        class="fa-solid fa-location-dot"
-                        aria-hidden="true">
-                    </i>
-
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
                     Chennai, Tamil Nadu
                 </p>
 
                 <p>
-                    <i
-                        class="fa-solid fa-phone"
-                        aria-hidden="true">
-                    </i>
-
+                    <i class="fa-solid fa-phone" aria-hidden="true"></i>
                     +91 98765 43210
                 </p>
 
                 <p>
-                    <i
-                        class="fa-solid fa-envelope"
-                        aria-hidden="true">
-                    </i>
-
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                     support@freshcart.com
                 </p>
 
@@ -1339,11 +1154,8 @@
             </p>
 
             <div>
-
                 <span>Privacy Policy</span>
-
                 <span>Terms & Conditions</span>
-
             </div>
 
         </div>
@@ -1351,7 +1163,7 @@
     </footer>
 
 
-    <!-- ================= CART SIDEBAR ================= -->
+    <!-- ================= CART ================= -->
 
     <div
         class="cart-overlay"
@@ -1407,9 +1219,7 @@
 
                 <h3>Your cart is empty</h3>
 
-                <p>
-                    Add some fresh groceries!
-                </p>
+                <p>Add some fresh groceries!</p>
 
             </div>
 
@@ -1448,8 +1258,7 @@
     </div>
 
 
-    <!-- ================= ACCESSIBILITY CSS ================= -->
-
+    <!-- Accessibility -->
     <style>
         .sr-only {
             position: absolute;
@@ -1464,14 +1273,14 @@
         }
 
         .category-card:focus {
-            outline: 3px solid #4CAF50;
+            outline: 3px solid #4caf50;
             outline-offset: 3px;
         }
     </style>
 
 
     <!-- JavaScript -->
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
 </body>
 
